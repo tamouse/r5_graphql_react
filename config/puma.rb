@@ -47,8 +47,11 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 # or connections that may have been created at application boot, as Ruby
 # cannot share connections between processes.
 #
+# NOTE: I think this is where I'd get unique UUID generators
+#
 # on_worker_boot do
 #   ActiveRecord::Base.establish_connection if defined?(ActiveRecord)
+#   UUID.generate.next_sequence
 # end
 #
 
