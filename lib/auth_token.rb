@@ -12,7 +12,7 @@ class AuthToken
   end
 
   def verify(token)
-    res = JsonWebToken.verify(token, key: @sekrit)
+    JsonWebToken.verify(token, key: @sekrit)
   end
 
 end
