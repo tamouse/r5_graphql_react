@@ -17,4 +17,10 @@ RSpec.describe Comment, type: :model do
     expect(subject.errors.full_messages).to include("User can't be blank")
   end
 
+  it "must have unique uuid" do
+    comment = @user.posts.first.comments.create(FactoryGirl.attributes_for(:comment))
+    comment2 = @user.posts.first.comments.build(FactoryGirl.attributes_for(:comment, uuid: comment.uuid))
+    expect(comment2).not_to be_valid
+    expect(comment2.errors.full_messages).not_to include("Uuid has already been taken")
+  end
 end

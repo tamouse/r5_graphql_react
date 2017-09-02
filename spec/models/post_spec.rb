@@ -8,6 +8,13 @@ RSpec.describe Post, type: :model do
     expect(subject.errors.full_messages).to include("Body can't be blank")
   end
 
+  it "must have uniq uuid" do
+    post1 = FactoryGirl.create(:post_with_author)
+    post2 = FactoryGirl.build(:post_with_author, uuid: post1.uuid)
+    expect(post2).not_to be_valid
+    expect(post2.errors.full_messages).to include("Uuid has already been taken")
+  end
+
   describe "scopes" do
     before do
       @user = FactoryGirl.create(:user)
