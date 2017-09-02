@@ -64,8 +64,8 @@ insert_into_file 'app/models/user.rb', after: "class User < ApplicationRecord\n"
 
   has_secure_password
 
-  validates_presence_of :uuid, :name, :email, :password_digest
-  validates_uniquenes_of :uuid, :email
+  validates_presence_of :name, :email, :password_digest
+  validates_uniquenes_of  :email
 
 |
 end
