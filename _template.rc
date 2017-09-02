@@ -1,0 +1,2 @@
+   --api  --skip-yarn --skip-gemfile --skip-sprockets --skip-spring --skip-coffee
+   --skip-javascript --skip-turbolinks --skip-test --skip-system-test --skip-bundle

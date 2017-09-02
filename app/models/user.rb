@@ -8,8 +8,6 @@ class User < ApplicationRecord
   has_many :posts, dependent: :destroy
   has_many :comments, dependent: :destroy
 
-  before_validation :create_uuid
-
   validates_presence_of :name, :email, :password_digest
   validates_uniqueness_of :email
 
