@@ -7,12 +7,27 @@ class AuthToken
   end
 
   def token(user)
-    payload = { id: user.uuid }
+    payload = {
+      id: user.uuid,
+      expires_in: (Time.now.utc + 1.hour).to_i
+    }
     JsonWebToken.sign(payload, key: @sekrit)
   end
 
   def verify(token)
+    payload = decode(token)
+    if payload.dig(:ok) && payload.dig(:ok, :expires_in) < Time.now.utc.to_i
+      payload = {error: :token_expired}
+    end
+    payload
+  end
+
+  private
+
+  def decode(token)
     JsonWebToken.verify(token, key: @sekrit)
+  rescue RuntimeError, ArgumentError => e
+    {error: "#{e} (#{e.class.name})"}
   end
 
 end

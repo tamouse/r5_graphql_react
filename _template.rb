@@ -23,7 +23,6 @@ gem 'bcrypt'
 gem 'rack-cors'
 gem 'uuid'
 gem 'graphql'
-gem 'graphiql-rails'
 gem 'json_web_token'
 
 gem_group :development, :test do
@@ -32,13 +31,17 @@ gem_group :development, :test do
   gem 'pry-rails'
   gem 'factory_girl_rails'
   gem 'faker'
+  gem 'timecop'
 end
 
 gem_group :development do
   gem 'listen'
 end
 
+run "bundle install"
 generate 'rspec:install'
+generate 'graphql:install'
+run "bundle install"
 
 initializer 'uuid_generator.rb', <<-CODE
 require "uuid"
@@ -95,8 +98,6 @@ Here's what's included:
 
 INFO
 
-
-run "bundle install"
 rails_command "db:create"
 rails_command "db:migrate"
 
@@ -116,5 +117,8 @@ Welcome to your new Rails API + GraphQL + React applicaiton
 ********************************************************************************
 
 Cd into the app directory, #{Dir.pwd} and start coding!
+
+You may want to install https://github.com/skevy/graphiql-app if you haven't to
+have a nice interface to your graphql api.
 
 |
