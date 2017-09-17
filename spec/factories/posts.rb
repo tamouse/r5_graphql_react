@@ -10,7 +10,7 @@ FactoryGirl.define do
     end
 
     factory :post_with_author do
-      user
+      author
 
       factory :published_post_with_author do
         published_at {Time.current}

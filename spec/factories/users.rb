@@ -6,5 +6,11 @@ FactoryGirl.define do
     admin false
     password "password"
     password_confirmation "password"
+
+    factory :author
+
+    factory :admin do
+      admin true
+    end
   end
 end

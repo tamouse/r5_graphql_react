@@ -10,11 +10,11 @@ RSpec.describe Comment, type: :model do
     @user.destroy
   end
 
-  it "must have body, post, and user" do
+  it "must have body, post, and an author" do
     expect(subject).not_to be_valid
     expect(subject.errors.full_messages).to include("Body can't be blank")
     expect(subject.errors.full_messages).to include("Post can't be blank")
-    expect(subject.errors.full_messages).to include("User can't be blank")
+    expect(subject.errors.full_messages).to include("Author can't be blank")
   end
 
   it "must have unique uuid" do

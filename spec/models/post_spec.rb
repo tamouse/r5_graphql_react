@@ -1,9 +1,9 @@
 require "rails_helper"
 
 RSpec.describe Post, type: :model do
-  it "must have a user, a title, and a body" do
+  it "must have an author, a title, and a body" do
     expect(subject).not_to be_valid
-    expect(subject.errors.full_messages).to include("User can't be blank")
+    expect(subject.errors.full_messages).to include("Author can't be blank")
     expect(subject.errors.full_messages).to include("Title can't be blank")
     expect(subject.errors.full_messages).to include("Body can't be blank")
   end
