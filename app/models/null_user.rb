@@ -18,4 +18,8 @@ class NullUser
   end
   alias :valid? :validated
 
+  def posts
+    Post.all
+  end
+
 end

@@ -1,12 +1,13 @@
 class GraphqlController < ApplicationController
+  include AuthenticateUser
+
   def execute
+    authenticate!
     variables = ensure_hash(params[:variables])
     query = params[:query]
     operation_name = params[:operationName]
     context = {
-      # Query context goes here, for example:
-      # current_user: current_user,
-      current_user: nil
+      current_user: current_user
     }
     result = R5GraphqlReactSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
     render json: result
