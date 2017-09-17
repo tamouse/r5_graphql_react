@@ -20,3 +20,12 @@ this a pure Rails API and a pure React client.
 - JSON Web Token authentication
 - UUIDs for database objects
 - Rails application template, including template files and rc file
+
+
+## TODOs:
+
+- [ ] create mutations for the authorization part (create user, login,
+  logout, etc)
+- [ ] set up Pundit for authorization stuff
+- [ ] create the React + Apollo client
+- [ ] handle login, logout, token refresh, etc, in React app
