@@ -4,12 +4,13 @@ class AuthToken
 
   def initialize()
     @sekrit = Rails.application.secrets.secret_key_base
+    @expiry_hours = Rails.application.secrets.expiry_hours
   end
 
   def token(user)
     payload = {
       id: user.uuid,
-      expires_in: (Time.now.utc + 1.hour).to_i
+      expires_in: (Time.now.utc + @expiry_hours.hour).to_i
     }
     JsonWebToken.sign(payload, key: @sekrit)
   end

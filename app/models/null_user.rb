@@ -4,8 +4,8 @@ class NullUser
   def initialize(attributes={})
     self.id = 0
     self.uuid = ''
-    self.name = ''
-    self.email = ''
+    self.name = 'Null User'
+    self.email = 'null'
     self.admin = false
   end
 
@@ -19,7 +19,11 @@ class NullUser
   alias :valid? :validated
 
   def posts
-    Post.all
+    []
+  end
+
+  def comments
+    []
   end
 
 end

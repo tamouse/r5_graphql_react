@@ -17,7 +17,7 @@ module AuthenticateUser
   end
 
   def authenticate!
-    if auth_header.blank?
+    if auth_header.blank? or auth_header == 'null'
       @current_user = nil
       return true
     end

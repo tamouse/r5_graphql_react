@@ -1,6 +1,8 @@
 Types::PostType = GraphQL::ObjectType.define do
   name "Post"
-  field :uuid, types.ID
+  field :id, types.ID do
+    resolve ->(o, _, _) {o.uuid}
+  end
   field :title, types.String
   field :excerpt, types.String, "Short excerpt from body" do
     resolve ->(obj, _args, _ctx) {

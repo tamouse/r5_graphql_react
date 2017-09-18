@@ -22,6 +22,7 @@ gem 'puma'
 gem 'bcrypt'
 gem 'rack-cors'
 gem 'uuid'
+gem 'foreman', '~> 0.82.0'
 gem 'graphql'
 gem 'json_web_token'
 
@@ -51,6 +52,23 @@ UUID.state_file = false
 UUID.generator.next_sequence
 
 CODE
+
+rakefile "start.rake" do
+  %Q{
+desc "Start both Rails API and Webpack Dev servers"
+task :start do
+  exec "foreman start -p 300"
+end
+}
+end
+
+file "Procfile" do
+  %Q{
+web: cd client && npm start
+api: bundle exec rails server -p 3001
+}
+end
+# TODO: Remember to add proxy to client/package.json later
 
 directory 'app'
 
@@ -98,6 +116,24 @@ Here's what's included:
 
 INFO
 
+##### REACT APP
+run "create-react-app client"
+inside "client" do
+  inject_into_file 'package.json', after: /^{/ do
+    %Q{
+  "proxy": "http://localhost:3001",
+
+}
+  end
+
+  run "npm install --save lodash recompose"
+  run "npm install --save react-router react-router-dom"
+  run "npm install --save react-apollo"
+  run "npm install --save-dev enzyme enzyme-to-json"
+  run "npm install --save-dev graphql@0.10.0 graphql-tools"
+  run "npm install --save-dev apollo-test-utils"
+end
+
 rails_command "db:create"
 rails_command "db:migrate"
 
@@ -107,6 +143,8 @@ git commit: %q{ -m "Initial Commit" }
 git :status
 
 rails_command "spec"
+
+
 
 say %Q|
 
