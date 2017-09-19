@@ -20,12 +20,38 @@ this a pure Rails API and a pure React client.
 - JSON Web Token authentication
 - UUIDs for database objects
 - Rails application template, including template files and rc file
-
+- React+Apollo client supporting sign up, login, and logout with JWTs
 
 ## TODOs:
 
-- [ ] create mutations for the authorization part (create user, login,
+- [X] create mutations for the authorization part (create user, login,
   logout, etc)
 - [ ] set up Pundit for authorization stuff
-- [ ] create the React + Apollo client
-- [ ] handle login, logout, token refresh, etc, in React app
+- [X] create the React + Apollo client
+- [X] handle login, logout, token refresh, etc, in React app
+- [ ] add pagination for collections
+- [ ] document *everything*
+
+## Running the app
+
+There is a rake task to make starting the app in dev easy:
+
+    rake start
+
+This starts up both the rails server running on port 3001 and the
+webpack-dev-server running on port 3000. The webpack-dev-server
+proxies requests to the rails server via an entry in `package.json`:
+
+```json
+  "proxy": "http://localhost:3001",
+```
+
+Inside the react client, the graphql endpoint then is pretty simple,
+just set to `/graphql`.
+
+## GraphiQL
+
+The Rails app is only an API, it does not handle anything that would
+be delivered by some other means. This also means that the GraphiQL
+development front end is not available. Instead, I've been using a
+stand-alone GraphiQL client, <https://github.com/skevy/graphiql-app>.

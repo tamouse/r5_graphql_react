@@ -5,6 +5,8 @@
   "proxy": "http://localhost:3001",
   "dependencies": {
     "lodash": "^4.17.4",
+    "moment": "^2.18.1",
+    "prop-types": "^15.5.10",
     "react": "^15.6.1",
     "react-apollo": "^1.4.15",
     "react-dom": "^15.6.1",

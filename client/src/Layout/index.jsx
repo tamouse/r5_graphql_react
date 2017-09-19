@@ -1,6 +1,32 @@
 import React from 'react'
 import styled from 'styled-components'
-import UserMenu from "../UserMenu/index";
+import UserMenu from "../UserMenu/index"
+import NavMenu from './NavMenu'
+
+
+const Layout = props => {
+  return (
+    <LayoutWrapper>
+      <FullHeight>
+        <AppHeader>
+          <Title>Welcome to Rails5 + GraphQL + Apollo + React Demo</Title>
+          <UserMenu/>
+          <NavMenu/>
+        </AppHeader>
+        <AppBody>
+          {props.children}
+        </AppBody>
+        <AppFooter>
+          <GitHubLink>
+            <Anchor href="https://github.com/tamouse/r5_graphql_react">Github Repo</Anchor>
+          </GitHubLink>
+        </AppFooter>
+      </FullHeight>
+    </LayoutWrapper>
+  )
+}
+
+export default Layout
 
 const LayoutWrapper = styled.div`
   height: 100%;
@@ -45,26 +71,3 @@ const Anchor = styled.a`
   color: white;
   text-decoration: none;
 `
-
-const Layout = props => {
-  return (
-    <LayoutWrapper>
-      <FullHeight>
-        <AppHeader>
-          <Title>Welcome to Rails5 + GraphQL + Apollo + React Demo</Title>
-          <UserMenu/>
-        </AppHeader>
-        <AppBody>
-          {props.children}
-        </AppBody>
-        <AppFooter>
-          <GitHubLink>
-            <Anchor href="https://github.com/tamouse/r5_graphql_react">Github Repo</Anchor>
-          </GitHubLink>
-        </AppFooter>
-      </FullHeight>
-    </LayoutWrapper>
-  )
-}
-
-export default Layout

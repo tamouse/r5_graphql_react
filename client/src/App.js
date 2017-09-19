@@ -7,10 +7,11 @@ import {
 } from 'react-apollo'
 
 import WhoAmI from './WhoAmI'
-import Layout from "./Layout/index";
+import Layout from "./Layout/index"
 import LogIn from './LogIn'
 import SignUp from './SignUp'
-import LogOut from "./LogOut";
+import LogOut from "./LogOut"
+import PostsIndex from "./Posts"
 
 const networkInterface = createNetworkInterface({
   uri: "/graphql",
@@ -44,6 +45,7 @@ class App extends React.Component {
             <Route exact path="/login" component={LogIn}/>
             <Route exact path="/signup" component={SignUp}/>
             <Route exact path="/logout" component={LogOut}/>
+            <Route exact path="/posts" component={PostsIndex}/>
           </Layout>
         </BrowserRouter>
       </ApolloProvider>
