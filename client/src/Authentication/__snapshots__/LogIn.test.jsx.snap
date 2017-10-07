@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Login component 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <LogIn
+    mutate={[Function]}
+/>,
+  "nodes": Array [
+    <LogIn
+      mutate={[Function]}
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <Apollo(LogIn) />,
+    "_instance": GraphQL {
+      "context": Object {},
+      "dataForChildViaMutation": [Function],
+      "previousData": Object {},
+      "props": Object {},
+      "refs": Object {},
+      "renderedElement": <LogIn
+        mutate={[Function]}
+/>,
+      "setWrappedInstance": [Function],
+      "shouldRerender": false,
+      "state": Object {},
+      "type": 1,
+      "updater": Updater {
+        "_renderer": [Circular],
+      },
+      "version": 0,
+    },
+    "_newState": null,
+    "_rendered": <LogIn
+      mutate={[Function]}
+/>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Apollo(LogIn) />,
+}
+`;

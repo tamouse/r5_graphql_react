@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders Layout without blowing up 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <styled.div>
+    <styled.div>
+        <styled.header>
+            <NavMenu />
+        </styled.header>
+        <styled.main />
+    </styled.div>
+</styled.div>,
+  "nodes": Array [
+    <styled.div>
+      <styled.div>
+            <styled.header>
+                  <NavMenu />
+            </styled.header>
+            <styled.main />
+      </styled.div>
+</styled.div>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <Layout />,
+    "_instance": null,
+    "_newState": null,
+    "_rendered": <styled.div>
+      <styled.div>
+            <styled.header>
+                  <NavMenu />
+            </styled.header>
+            <styled.main />
+      </styled.div>
+</styled.div>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <Layout />,
+}
+`;

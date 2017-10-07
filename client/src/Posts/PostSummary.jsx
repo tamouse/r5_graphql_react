@@ -1,15 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import {Row, Col} from 'react-bootstrap'
 import styled from 'styled-components'
 import moment from 'moment'
 
 const PostSummary = props => {
   const {post} = props
-  return (<PostSummaryWrapper>
-    <PostSummaryTitle>{post.title}</PostSummaryTitle>
-    <PostSummaryPublished>{moment(post.publishedAt).format("Do MMMM YYYY")}</PostSummaryPublished>
-    <PostSummaryExcerpt>{post.excerpt}</PostSummaryExcerpt>
-  </PostSummaryWrapper>)
+  return (
+    <PostSummaryArticle>
+      <Row>
+        <Col sm={12}>
+          <PostSummaryTitle>{post.title}</PostSummaryTitle>
+          <PostSummaryPublished>{moment(post.publishedAt).format("Do MMMM YYYY")}</PostSummaryPublished>
+          <PostSummaryExcerpt>{post.excerpt}</PostSummaryExcerpt>
+        </Col>
+      </Row>
+    </PostSummaryArticle>
+  )
 }
 
 PostSummary.propTypes = {
@@ -18,7 +25,7 @@ PostSummary.propTypes = {
 
 export default PostSummary
 
-const PostSummaryWrapper = styled.article``
+const PostSummaryArticle = styled.article``
 
 const PostSummaryTitle = styled.h2``
 
