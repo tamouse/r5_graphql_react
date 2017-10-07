@@ -1,6 +1,7 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
 import {graphql, gql} from 'react-apollo'
+import LogInForm from './LogInForm'
 
 const logInMutation = gql`
 mutation LogInUser($credentials: AuthProviderCredentials) {
@@ -47,7 +48,7 @@ class LogIn extends React.Component {
       },
     }).then(response => {
       let token = response.data.loginUser.token
-      window.sessionStorage.setItem('token', token)
+      global.sessionStorage.setItem('token', token)
       this.setState({
         loggedIn: true,
       })
@@ -57,25 +58,7 @@ class LogIn extends React.Component {
 
   render() {
     if (this.state.loggedIn) return <Redirect to="/"/>
-    return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <label>
-              Email: <input type="email" name="email" value={this.state.email} onChange={this.handleChange}/>
-            </label>
-          </div>
-          <div>
-            <label>
-              Password:  <input type="text" name="password" value={this.state.password} onChange={this.handleChange}/>
-            </label>
-          </div>
-          <div>
-            <input type="submit"/>
-          </div>
-        </form>
-      </div>
-    )
+    return (<LogInForm handleChange={this.handleChange} handleSubmit={this.handleSubmit}/>)
   }
 }
 

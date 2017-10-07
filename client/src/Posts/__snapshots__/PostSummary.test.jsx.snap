@@ -1,0 +1,226 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders PostSummary Component 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "sc-bdVaJa bDWFJH",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "row",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "col-sm-12",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "class": "sc-bwzfXH uTxCW",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "One",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "h2",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "sc-htpNat gqFmdF",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "12th October 2017",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "next": Object {
+                        "attribs": Object {
+                          "class": "sc-bxivhb fSOxbl",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "excerpt one",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "p",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                      },
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                  },
+                  Object {
+                    "attribs": Object {
+                      "class": "sc-htpNat gqFmdF",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "12th October 2017",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "p",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "sc-bxivhb fSOxbl",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "excerpt one",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                    },
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "class": "sc-bwzfXH uTxCW",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "One",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "h2",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                    },
+                    "type": "tag",
+                  },
+                  Object {
+                    "attribs": Object {
+                      "class": "sc-bxivhb fSOxbl",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "excerpt one",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "p",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "attribs": Object {
+                        "class": "sc-htpNat gqFmdF",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": "12th October 2017",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "p",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": Object {
+                        "attribs": Object {
+                          "class": "sc-bwzfXH uTxCW",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": "One",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "h2",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "tag",
+                      },
+                      "type": "tag",
+                    },
+                    "type": "tag",
+                  },
+                ],
+                "name": "div",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+              },
+            ],
+            "name": "div",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+          },
+        ],
+        "name": "article",
+        "next": null,
+        "parent": null,
+        "prev": null,
+        "root": [Circular],
+        "type": "tag",
+      },
+    ],
+    "name": "root",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "type": "root",
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xmlMode": false,
+  },
+}
+`;

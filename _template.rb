@@ -57,7 +57,7 @@ rakefile "start.rake" do
   %Q{
 desc "Start both Rails API and Webpack Dev servers"
 task :start do
-  exec "foreman start -p 300"
+  exec "foreman start -p 3000"
 end
 }
 end

@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the Login component 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Redirect
+    push={false}
+    to="/"
+/>,
+  "nodes": Array [
+    <Redirect
+      push={false}
+      to="/"
+/>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <LogOut />,
+    "_instance": null,
+    "_newState": null,
+    "_rendered": <Redirect
+      push={false}
+      to="/"
+/>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <LogOut />,
+}
+`;

@@ -1,0 +1,169 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the WhoAmI component 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={true}
+>
+    <Row
+        bsClass="row"
+        componentClass="div"
+    >
+        <Col
+            bsClass="col"
+            componentClass="div"
+            sm={12}
+        >
+            <Panel
+                bsClass="panel"
+                bsStyle="default"
+                defaultExpanded={false}
+                header="Who am I?"
+            >
+                <ListGroup
+                    bsClass="list-group"
+                >
+                    <ListGroupItem
+                        bsClass="list-group-item"
+                        listItem={false}
+                    >
+                        Name: 
+                        Fred
+                    </ListGroupItem>
+                    <ListGroupItem
+                        bsClass="list-group-item"
+                        listItem={false}
+                    >
+                        Email: 
+                        fred_murtz@lucy.com
+                    </ListGroupItem>
+                </ListGroup>
+            </Panel>
+        </Col>
+    </Row>
+</Grid>,
+  "nodes": Array [
+    <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={true}
+>
+      <Row
+            bsClass="row"
+            componentClass="div"
+      >
+            <Col
+                  bsClass="col"
+                  componentClass="div"
+                  sm={12}
+            >
+                  <Panel
+                        bsClass="panel"
+                        bsStyle="default"
+                        defaultExpanded={false}
+                        header="Who am I?"
+                  >
+                        <ListGroup
+                              bsClass="list-group"
+                        >
+                              <ListGroupItem
+                                    bsClass="list-group-item"
+                                    listItem={false}
+                              >
+                                    Name: 
+                                    Fred
+                              </ListGroupItem>
+                              <ListGroupItem
+                                    bsClass="list-group-item"
+                                    listItem={false}
+                              >
+                                    Email: 
+                                    fred_murtz@lucy.com
+                              </ListGroupItem>
+                        </ListGroup>
+                  </Panel>
+            </Col>
+      </Row>
+</Grid>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <WhoAmi
+      viewer={
+            Object {
+                  "email": "fred_murtz@lucy.com",
+                  "name": "Fred",
+                }
+      }
+/>,
+    "_instance": null,
+    "_newState": null,
+    "_rendered": <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={true}
+>
+      <Row
+            bsClass="row"
+            componentClass="div"
+      >
+            <Col
+                  bsClass="col"
+                  componentClass="div"
+                  sm={12}
+            >
+                  <Panel
+                        bsClass="panel"
+                        bsStyle="default"
+                        defaultExpanded={false}
+                        header="Who am I?"
+                  >
+                        <ListGroup
+                              bsClass="list-group"
+                        >
+                              <ListGroupItem
+                                    bsClass="list-group-item"
+                                    listItem={false}
+                              >
+                                    Name: 
+                                    Fred
+                              </ListGroupItem>
+                              <ListGroupItem
+                                    bsClass="list-group-item"
+                                    listItem={false}
+                              >
+                                    Email: 
+                                    fred_murtz@lucy.com
+                              </ListGroupItem>
+                        </ListGroup>
+                  </Panel>
+            </Col>
+      </Row>
+</Grid>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <WhoAmi
+    viewer={
+        Object {
+            "email": "fred_murtz@lucy.com",
+            "name": "Fred",
+          }
+    }
+/>,
+}
+`;

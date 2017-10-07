@@ -1,12 +1,13 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
 import {graphql, gql} from 'react-apollo'
+import SignUpForm from './SignUpForm'
 
 const signUpMutation = gql`
-mutation SignUpUser($credentials: AuthProviderCredentials) {
-  createUser(credentials: $credentials)
-  {token user {name email}}
-}`
+  mutation SignUpUser($credentials: AuthProviderCredentials) {
+    createUser(credentials: $credentials)
+    {token user {name email}}
+  }`
 
 
 class SignUp extends React.Component {
@@ -27,10 +28,11 @@ class SignUp extends React.Component {
     const target = e.target
     const value = target.type === 'checkbox' ? target.checked : target.value
     const name = target.name
-
-    this.setState({
+    let updates = {
       [name]: value,
-    })
+    }
+
+    this.setState(updates)
   }
 
 
@@ -47,7 +49,7 @@ class SignUp extends React.Component {
       },
     }).then(response => {
       let token = response.data.createUser.token
-      window.sessionStorage.setItem('token', token)
+      global.sessionStorage.setItem('token', token)
       this.setState({
         loggedIn: true,
       })
@@ -56,30 +58,7 @@ class SignUp extends React.Component {
 
   render() {
     if (this.state.loggedIn) return <Redirect to="/"/>
-    return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
-          <div>
-            <label>
-              Name: <input type="text" name="name" value={this.state.name} onChange={this.handleChange}/>
-            </label>
-          </div>
-          <div>
-            <label>
-              Email: <input type="email" name="email" value={this.state.email} onChange={this.handleChange}/>
-            </label>
-          </div>
-          <div>
-            <label>
-              Password: <input type="text" name="password" value={this.state.password} onChange={this.handleChange}/>
-            </label>
-          </div>
-          <div>
-            <input type="submit"/>
-          </div>
-        </form>
-      </div>
-    )
+    return (<SignUpForm handleSubmit={this.handleSubmit} handleChange={this.handleChange}/>)
   }
 }
 

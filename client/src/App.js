@@ -6,11 +6,11 @@ import {
   createNetworkInterface,
 } from 'react-apollo'
 
-import WhoAmI from './WhoAmI'
+import WhoAmI from './WhoAmI/index'
 import Layout from "./Layout/index"
-import LogIn from './LogIn'
-import SignUp from './SignUp'
-import LogOut from "./LogOut"
+import LogIn from './Authentication/LogIn'
+import SignUp from './Authentication/SignUp'
+import LogOut from "./Authentication/LogOut"
 import PostsIndex from "./Posts"
 
 const networkInterface = createNetworkInterface({

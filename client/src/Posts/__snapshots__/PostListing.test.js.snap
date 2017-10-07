@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`It should render the PostListing Component 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Grid
+    bsClass="container"
+    componentClass="div"
+    fluid={true}
+>
+    <PostSummary
+        post={
+            Object {
+                "body": "post one",
+                "id": 1,
+                "title": "one",
+              }
+        }
+    />
+    <PostSummary
+        post={
+            Object {
+                "body": "post two",
+                "id": 2,
+                "title": "two",
+              }
+        }
+    />
+</Grid>,
+  "nodes": Array [
+    <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={true}
+>
+      <PostSummary
+            post={
+                  Object {
+                        "body": "post one",
+                        "id": 1,
+                        "title": "one",
+                      }
+            }
+      />
+      <PostSummary
+            post={
+                  Object {
+                        "body": "post two",
+                        "id": 2,
+                        "title": "two",
+                      }
+            }
+      />
+</Grid>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <PostListing
+      posts={
+            Array [
+                  Object {
+                    "body": "post one",
+                    "id": 1,
+                    "title": "one",
+                  },
+                  Object {
+                    "body": "post two",
+                    "id": 2,
+                    "title": "two",
+                  },
+                ]
+      }
+/>,
+    "_instance": null,
+    "_newState": null,
+    "_rendered": <Grid
+      bsClass="container"
+      componentClass="div"
+      fluid={true}
+>
+      <PostSummary
+            post={
+                  Object {
+                        "body": "post one",
+                        "id": 1,
+                        "title": "one",
+                      }
+            }
+      />
+      <PostSummary
+            post={
+                  Object {
+                        "body": "post two",
+                        "id": 2,
+                        "title": "two",
+                      }
+            }
+      />
+</Grid>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <PostListing
+    posts={
+        Array [
+            Object {
+              "body": "post one",
+              "id": 1,
+              "title": "one",
+            },
+            Object {
+              "body": "post two",
+              "id": 2,
+              "title": "two",
+            },
+          ]
+    }
+/>,
+}
+`;

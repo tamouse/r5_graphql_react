@@ -1,0 +1,257 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Renders the NavMenu 1`] = `
+ShallowWrapper {
+  "complexSelector": ComplexSelector {
+    "buildPredicate": [Function],
+    "childrenOfNode": [Function],
+    "findWhereUnwrapped": [Function],
+  },
+  "length": 1,
+  "node": <Uncontrolled(Navbar)
+    bsStyle="default"
+    collapseOnSelect={true}
+>
+    <NavbarHeader>
+        <NavbarBrand>
+            <Link
+                replace={false}
+                to="/"
+            >
+                R5+GraphQL+React
+            </Link>
+        </NavbarBrand>
+        <NavbarToggle />
+    </NavbarHeader>
+    <NavbarCollapse>
+        <Nav
+            bsClass="nav"
+            justified={false}
+            pullLeft={false}
+            pullRight={false}
+            stacked={false}
+        >
+            <LinkContainer
+                activeClassName="active"
+                exact={false}
+                replace={false}
+                strict={false}
+                to="/posts"
+            >
+                <NavItem
+                    active={false}
+                    disabled={false}
+                >
+                    Posts
+                </NavItem>
+            </LinkContainer>
+        </Nav>
+        <Nav
+            bsClass="nav"
+            justified={false}
+            pullLeft={false}
+            pullRight={true}
+            stacked={false}
+        >
+            <LinkContainer
+                activeClassName="active"
+                exact={false}
+                replace={false}
+                strict={false}
+                to="/login"
+            >
+                <NavItem
+                    active={false}
+                    disabled={false}
+                >
+                    Log In
+                </NavItem>
+            </LinkContainer>
+            <LinkContainer
+                activeClassName="active"
+                exact={false}
+                replace={false}
+                strict={false}
+                to="/signup"
+            >
+                <NavItem
+                    active={false}
+                    disabled={false}
+                >
+                    Sign Up
+                </NavItem>
+            </LinkContainer>
+        </Nav>
+    </NavbarCollapse>
+</Uncontrolled(Navbar)>,
+  "nodes": Array [
+    <Uncontrolled(Navbar)
+      bsStyle="default"
+      collapseOnSelect={true}
+>
+      <NavbarHeader>
+            <NavbarBrand>
+                  <Link
+                        replace={false}
+                        to="/"
+                  >
+                        R5+GraphQL+React
+                  </Link>
+            </NavbarBrand>
+            <NavbarToggle />
+      </NavbarHeader>
+      <NavbarCollapse>
+            <Nav
+                  bsClass="nav"
+                  justified={false}
+                  pullLeft={false}
+                  pullRight={false}
+                  stacked={false}
+            >
+                  <LinkContainer
+                        activeClassName="active"
+                        exact={false}
+                        replace={false}
+                        strict={false}
+                        to="/posts"
+                  >
+                        <NavItem
+                              active={false}
+                              disabled={false}
+                        >
+                              Posts
+                        </NavItem>
+                  </LinkContainer>
+            </Nav>
+            <Nav
+                  bsClass="nav"
+                  justified={false}
+                  pullLeft={false}
+                  pullRight={true}
+                  stacked={false}
+            >
+                  <LinkContainer
+                        activeClassName="active"
+                        exact={false}
+                        replace={false}
+                        strict={false}
+                        to="/login"
+                  >
+                        <NavItem
+                              active={false}
+                              disabled={false}
+                        >
+                              Log In
+                        </NavItem>
+                  </LinkContainer>
+                  <LinkContainer
+                        activeClassName="active"
+                        exact={false}
+                        replace={false}
+                        strict={false}
+                        to="/signup"
+                  >
+                        <NavItem
+                              active={false}
+                              disabled={false}
+                        >
+                              Sign Up
+                        </NavItem>
+                  </LinkContainer>
+            </Nav>
+      </NavbarCollapse>
+</Uncontrolled(Navbar)>,
+  ],
+  "options": Object {},
+  "renderer": ReactShallowRenderer {
+    "_context": Object {},
+    "_element": <NavMenu />,
+    "_instance": null,
+    "_newState": null,
+    "_rendered": <Uncontrolled(Navbar)
+      bsStyle="default"
+      collapseOnSelect={true}
+>
+      <NavbarHeader>
+            <NavbarBrand>
+                  <Link
+                        replace={false}
+                        to="/"
+                  >
+                        R5+GraphQL+React
+                  </Link>
+            </NavbarBrand>
+            <NavbarToggle />
+      </NavbarHeader>
+      <NavbarCollapse>
+            <Nav
+                  bsClass="nav"
+                  justified={false}
+                  pullLeft={false}
+                  pullRight={false}
+                  stacked={false}
+            >
+                  <LinkContainer
+                        activeClassName="active"
+                        exact={false}
+                        replace={false}
+                        strict={false}
+                        to="/posts"
+                  >
+                        <NavItem
+                              active={false}
+                              disabled={false}
+                        >
+                              Posts
+                        </NavItem>
+                  </LinkContainer>
+            </Nav>
+            <Nav
+                  bsClass="nav"
+                  justified={false}
+                  pullLeft={false}
+                  pullRight={true}
+                  stacked={false}
+            >
+                  <LinkContainer
+                        activeClassName="active"
+                        exact={false}
+                        replace={false}
+                        strict={false}
+                        to="/login"
+                  >
+                        <NavItem
+                              active={false}
+                              disabled={false}
+                        >
+                              Log In
+                        </NavItem>
+                  </LinkContainer>
+                  <LinkContainer
+                        activeClassName="active"
+                        exact={false}
+                        replace={false}
+                        strict={false}
+                        to="/signup"
+                  >
+                        <NavItem
+                              active={false}
+                              disabled={false}
+                        >
+                              Sign Up
+                        </NavItem>
+                  </LinkContainer>
+            </Nav>
+      </NavbarCollapse>
+</Uncontrolled(Navbar)>,
+    "_rendering": false,
+    "_updater": Updater {
+      "_renderer": [Circular],
+    },
+    "getRenderOutput": [Function],
+    "render": [Function],
+  },
+  "root": [Circular],
+  "unrendered": <NavMenu />,
+}
+`;
