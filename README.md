@@ -12,15 +12,18 @@ Rails5 API features, GraphQL, and working with a completely separate
 React front-end client.
 
 I'm not using any of the webpacker or webpack-rails features, making
-this a pure Rails API and a pure React client.
+this a pure Rails API and a pure React client. The API and client live
+in separate subdirectories in this repo.
 
 ## What's included
 
-- Postgres database
+- Postgres database integration
 - JSON Web Token authentication
 - UUIDs for database objects
 - Rails application template, including template files and rc file
+  (under development)
 - React+Apollo client supporting sign up, login, and logout with JWTs
+  (initialized via `create-react-app`)
 
 ## TODOs:
 
@@ -31,15 +34,22 @@ this a pure Rails API and a pure React client.
 - [X] handle login, logout, token refresh, etc, in React app
 - [ ] add pagination for collections
 - [ ] document *everything*
+- [ ] add mutations for Posts and Comments
 
 ## Running the app
 
-There is a rake task to make starting the app in dev easy:
+First, make sure you `foreman` installed globally:
 
-    rake start
+    gem install foreman
+
+(Make sure to install at least version 0.84)
+
+Then you start it up with:
+
+    foreman start
 
 This starts up both the rails server running on port 3001 and the
-webpack-dev-server running on port 3000. The webpack-dev-server
+webpack-dev-server running on port 5000. The webpack-dev-server
 proxies requests to the rails server via an entry in `package.json`:
 
 ```json

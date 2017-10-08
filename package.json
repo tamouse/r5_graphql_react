@@ -1,0 +1,15 @@
+{
+  "name": "r5_graphql_react",
+  "version": "1.0.0",
+  "description": "Practice Rails5+GraphQL+React+Apollo app using JWT authentication",
+  "main": "index.js",
+  "repository": "git@github.com:tamouse/r5_graphql_react.git",
+  "author": "Tamara Temple <tamouse@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "foreman start",
+    "test": "npm run client:test && npm run api:test",
+    "client:test": "(cd client && CI=true npm test)",
+    "api:test": "(cd api && bin/rake)"
+  }
+}
