@@ -9,7 +9,16 @@ class GraphqlController < ApplicationController
     context = {
       current_user: current_user
     }
-    result = R5GraphqlReactSchema.execute(query, variables: variables, context: context, operation_name: operation_name)
+
+    # NOTE: For whatever reason, if you specify a blank operation_name, graphql messes up
+    if operation_name.present?
+      result = R5GraphqlReactSchema.execute(query,
+        variables: variables, context: context, operation_name: operation_name)
+    else
+      result = R5GraphqlReactSchema.execute(query,
+        variables: variables, context: context)
+    end
+
     render json: result
   end
 

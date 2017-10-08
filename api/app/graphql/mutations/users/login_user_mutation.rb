@@ -1,4 +1,4 @@
-class Mutations::LoginUser
+class Mutations::Users::LoginUserMutation
   def call(_, args, _)
     creds = args[:credentials]
     user = User.find_by(email: creds[:email])

@@ -1,4 +1,4 @@
-class Mutations::CreateUser
+class Mutations::Users::CreateUserMutation
   def call(obj, args, ctx)
     creds = args[:credentials]
     user = User.create!(

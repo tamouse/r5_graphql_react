@@ -20,6 +20,10 @@ Types::PostType = GraphQL::ObjectType.define do
     resolve ->(o, _a, _c) {o.updated_at.iso8601(6)}
   end
 
+  field :comment_count, types.Int, "Number of comments on post" do
+    resolve ->(o,_,_){o.comments.count}
+  end
+
   field :author, Types::UserType
   field :comments, types[Types::CommentType]
 end

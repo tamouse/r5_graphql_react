@@ -26,4 +26,16 @@ class NullUser
     []
   end
 
+  def can_post?
+    false
+  end
+
+  def method_missing(method_id)
+    null
+  end
+
+  def respond_to?(method_id)
+    User.new.respond_to? method_id
+  end
+
 end

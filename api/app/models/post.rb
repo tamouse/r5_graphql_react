@@ -10,7 +10,7 @@ class Post < ApplicationRecord
   scope :drafts, -> { where(published_at: nil) }
 
   def published?
-    !!published_at.nil?
+    !published_at.nil?
   end
 
   def publish!

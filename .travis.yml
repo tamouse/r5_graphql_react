@@ -2,4 +2,4 @@ language: ruby
 rvm:
   - 2.4
 before_script:
-  - bundle exec rails db:setup
+  - cd api && bundle exec rails db:setup
