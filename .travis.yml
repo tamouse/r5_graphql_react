@@ -1,5 +1,9 @@
 language: ruby
 rvm:
   - 2.4
+install:
+  - cd api && bundle install --path vendor/bundle
 before_script:
   - cd api && bundle exec rails db:setup
+script:
+  - cd api && bundle exec rake
