@@ -5,7 +5,7 @@ import WhoAmI from './WhoAmI'
 
 const WhoAmIQuery = gql`query WhoAmi {viewer {name email}}`
 
-const WhoAmIContainer = props => {
+export const WhoAmIContainer = props => {
   const {data} = props
   const {loading, error, viewer} = data
 
