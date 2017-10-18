@@ -1,9 +1,13 @@
 language: ruby
 rvm:
   - 2.4
+before_install:
+  - nvm install --lts && nvm use --lts
 install:
   - (cd api && bundle install --path vendor/bundle)
+  - (cd client && npm install)
 before_script:
   - (cd api && bundle exec rails db:setup)
 script:
   - (cd api && bundle exec rake)
+  - (cd client && npm test)
