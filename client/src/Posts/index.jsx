@@ -1,7 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import {graphql, gql} from 'react-apollo'
+import {graphql} from 'react-apollo'
+import gql from 'graphql-tag'
 import PostsListing from './PostListing'
 
 const listPosts = gql`query Posts{viewer {public_posts {id title excerpt body publishedAt}}}`

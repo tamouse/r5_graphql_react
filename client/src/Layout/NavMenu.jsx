@@ -9,7 +9,6 @@ import {LinkContainer} from 'react-router-bootstrap'
 import {Link} from 'react-router-dom'
 import {userLoggedIn} from '../Utils';
 
-
 const NavMenu = props => {
   const userMenu = () => {
     if (userLoggedIn()) {
@@ -23,26 +22,21 @@ const NavMenu = props => {
       )
     }
   }
-
-
   return (
     <Navbar collapseOnSelect>
       <Navbar.Header>
         <NavbarBrand>
           <Link to={'/'}>R5+GraphQL+React</Link>
         </NavbarBrand>
-        <Navbar.Toggle/>
       </Navbar.Header>
-      <Navbar.Collapse>
-        <Nav>
-          <LinkContainer to={'/posts'}>
-            <NavItem>Posts</NavItem>
-          </LinkContainer>
-        </Nav>
-        <Nav pullRight>
-          {userMenu()}
-        </Nav>
-      </Navbar.Collapse>
+      <Nav>
+        <LinkContainer to={'/posts'}>
+          <NavItem>Posts</NavItem>
+        </LinkContainer>
+      </Nav>
+      <Nav pullRight>
+        {userMenu()}
+      </Nav>
     </Navbar>
   )
 }

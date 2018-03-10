@@ -4,12 +4,17 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "apollo-cache-inmemory": "^1.1.10",
+    "apollo-client": "^2.2.6",
+    "apollo-link": "^1.2.1",
+    "apollo-link-http": "^1.5.3",
     "graphql": "^0.11.7",
+    "graphql-tag": "^2.8.0",
     "lodash": "^4.17.4",
     "moment": "^2.21.0",
     "prop-types": "^15.5.10",
     "react": "^16.2.0",
-    "react-apollo": "^1.4.15",
+    "react-apollo": "^2.0.4",
     "react-bootstrap": "^0.31.3",
     "react-dom": "^16.2.0",
     "react-modal": "^3.1.8",
@@ -21,15 +26,14 @@
     "styled-components": "^2.1.2"
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^3.2.12",
-    "@storybook/addon-links": "^3.2.12",
-    "@storybook/react": "^3.2.12",
-    "apollo-test-utils": "^0.3.2",
+    "@storybook/addon-actions": "^3.3.15",
+    "@storybook/addon-links": "^3.3.15",
+    "@storybook/react": "^3.3.15",
     "enzyme": "^3.2.0",
     "enzyme-to-json": "^3.2.2",
     "graphql-tools": "^1.2.2",
-    "react-scripts": "^1.0.17",
-    "react-test-renderer": "^16.0.0"
+    "react-scripts": "^1.1.1",
+    "react-test-renderer": "^16.2.0"
   },
   "scripts": {
     "start": "react-scripts start",

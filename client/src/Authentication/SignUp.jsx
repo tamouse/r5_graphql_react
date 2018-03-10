@@ -1,6 +1,7 @@
 import React from 'react'
 import {Redirect} from 'react-router-dom'
-import {graphql, gql} from 'react-apollo'
+import {graphql} from 'react-apollo'
+import gql from 'graphql-tag'
 import SignUpForm from './SignUpForm'
 
 const signUpMutation = gql`

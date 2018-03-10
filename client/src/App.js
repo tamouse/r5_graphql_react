@@ -1,11 +1,11 @@
-import React from 'react';
-import {BrowserRouter, Route} from 'react-router-dom'
-import {
-  ApolloClient,
-  ApolloProvider,
-  createNetworkInterface,
-} from 'react-apollo'
+import React from 'react'
+import {ApolloClient} from 'apollo-client'
+import {createHttpLink} from 'apollo-link-http'
+import {ApolloLink} from 'apollo-link'
+import {InMemoryCache} from 'apollo-cache-inmemory'
+import {ApolloProvider} from 'react-apollo'
 
+import {BrowserRouter, Route} from 'react-router-dom'
 import WhoAmI from './WhoAmI/index'
 import Layout from "./Layout/index"
 import LogIn from './Authentication/LogIn'
@@ -13,26 +13,31 @@ import SignUp from './Authentication/SignUp'
 import LogOut from "./Authentication/LogOut"
 import PostsIndex from "./Posts"
 
-const networkInterface = createNetworkInterface({
-  uri: "/graphql",
+const httpLink = createHttpLink({
+  uri: '/graphql',
+  opts: {
+    credentials: 'same-origin'
+  }
 })
 
-// See http://dev.apollodata.com/react/auth.html#Header for explanation
-// Note: using SessionStorage instead of LocalStorage for the token
-networkInterface.use([{
-  applyMiddleware(req, next) {
-    if (!req.options.headers) {
-      req.options.headers = {};  // Create the header object if needed.
+const middlewareLink = new ApolloLink((operation, forward) => {
+  // get the authentication token from session storage if it exists
+  const token = sessionStorage.getItem('token');
+
+  operation.setContext({
+    headers: {
+      authorization: token ? `Bearer ${token}` : null
     }
-    // get the authentication token from session storage if it exists
-    const token = window.sessionStorage.getItem('token');
-    req.options.headers.authorization = token ? `Bearer ${token}` : null;
-    next();
-  }
-}]);
+  })
+
+  return (forward(operation))
+})
+
+const link = middlewareLink.concat(httpLink)
 
 const client = new ApolloClient({
-  networkInterface,
+  link,
+  cache: new InMemoryCache()
 })
 
 class App extends React.Component {
