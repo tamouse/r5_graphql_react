@@ -2,116 +2,9 @@
 
 exports[`It should render the PostListing Component 1`] = `
 ShallowWrapper {
-  "complexSelector": ComplexSelector {
-    "buildPredicate": [Function],
-    "childrenOfNode": [Function],
-    "findWhereUnwrapped": [Function],
-  },
   "length": 1,
-  "node": <Grid
-    bsClass="container"
-    componentClass="div"
-    fluid={true}
->
-    <PostSummary
-        post={
-            Object {
-                "body": "post one",
-                "id": 1,
-                "title": "one",
-              }
-        }
-    />
-    <PostSummary
-        post={
-            Object {
-                "body": "post two",
-                "id": 2,
-                "title": "two",
-              }
-        }
-    />
-</Grid>,
-  "nodes": Array [
-    <Grid
-      bsClass="container"
-      componentClass="div"
-      fluid={true}
->
-      <PostSummary
-            post={
-                  Object {
-                        "body": "post one",
-                        "id": 1,
-                        "title": "one",
-                      }
-            }
-      />
-      <PostSummary
-            post={
-                  Object {
-                        "body": "post two",
-                        "id": 2,
-                        "title": "two",
-                      }
-            }
-      />
-</Grid>,
-  ],
-  "options": Object {},
-  "renderer": ReactShallowRenderer {
-    "_context": Object {},
-    "_element": <PostListing
-      posts={
-            Array [
-                  Object {
-                    "body": "post one",
-                    "id": 1,
-                    "title": "one",
-                  },
-                  Object {
-                    "body": "post two",
-                    "id": 2,
-                    "title": "two",
-                  },
-                ]
-      }
-/>,
-    "_instance": null,
-    "_newState": null,
-    "_rendered": <Grid
-      bsClass="container"
-      componentClass="div"
-      fluid={true}
->
-      <PostSummary
-            post={
-                  Object {
-                        "body": "post one",
-                        "id": 1,
-                        "title": "one",
-                      }
-            }
-      />
-      <PostSummary
-            post={
-                  Object {
-                        "body": "post two",
-                        "id": 2,
-                        "title": "two",
-                      }
-            }
-      />
-</Grid>,
-    "_rendering": false,
-    "_updater": Updater {
-      "_renderer": [Circular],
-    },
-    "getRenderOutput": [Function],
-    "render": [Function],
-  },
-  "root": [Circular],
-  "unrendered": <PostListing
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <PostListing
     posts={
         Array [
             Object {
@@ -127,5 +20,149 @@ ShallowWrapper {
           ]
     }
 />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "class",
+    "props": Object {
+      "bsClass": "container",
+      "children": Array [
+        <PostSummary
+          post={
+                    Object {
+                              "body": "post one",
+                              "id": 1,
+                              "title": "one",
+                            }
+          }
+/>,
+        <PostSummary
+          post={
+                    Object {
+                              "body": "post two",
+                              "id": 2,
+                              "title": "two",
+                            }
+          }
+/>,
+      ],
+      "componentClass": "div",
+      "fluid": true,
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": "post-summary-1",
+        "nodeType": "function",
+        "props": Object {
+          "post": Object {
+            "body": "post one",
+            "id": 1,
+            "title": "one",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": "post-summary-2",
+        "nodeType": "function",
+        "props": Object {
+          "post": Object {
+            "body": "post two",
+            "id": 2,
+            "title": "two",
+          },
+        },
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+    ],
+    "type": [Function],
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "class",
+      "props": Object {
+        "bsClass": "container",
+        "children": Array [
+          <PostSummary
+            post={
+                        Object {
+                                    "body": "post one",
+                                    "id": 1,
+                                    "title": "one",
+                                  }
+            }
+/>,
+          <PostSummary
+            post={
+                        Object {
+                                    "body": "post two",
+                                    "id": 2,
+                                    "title": "two",
+                                  }
+            }
+/>,
+        ],
+        "componentClass": "div",
+        "fluid": true,
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": "post-summary-1",
+          "nodeType": "function",
+          "props": Object {
+            "post": Object {
+              "body": "post one",
+              "id": 1,
+              "title": "one",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": "post-summary-2",
+          "nodeType": "function",
+          "props": Object {
+            "post": Object {
+              "body": "post two",
+              "id": 2,
+              "title": "two",
+            },
+          },
+          "ref": null,
+          "rendered": null,
+          "type": [Function],
+        },
+      ],
+      "type": [Function],
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
 }
 `;

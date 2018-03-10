@@ -4,23 +4,29 @@ exports[`It should render the PostDetail Component 1`] = `
 initialize {
   "0": Object {
     "attribs": Object {},
-    "children": Array [
-      Object {
-        "attribs": Object {},
-        "children": Array [],
-        "name": "div",
-        "next": null,
-        "parent": null,
-        "prev": null,
-        "root": [Circular],
-        "type": "tag",
-      },
-    ],
-    "name": "root",
+    "children": Array [],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
     "next": null,
     "parent": null,
     "prev": null,
-    "type": "root",
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
   },
   "_root": [Circular],
   "length": 1,
@@ -28,7 +34,7 @@ initialize {
     "decodeEntities": true,
     "normalizeWhitespace": false,
     "withDomLvl1": true,
-    "xmlMode": false,
+    "xml": false,
   },
 }
 `;

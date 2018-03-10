@@ -3,19 +3,706 @@
 exports[`It should render the LogInForm Component 1`] = `
 initialize {
   "0": Object {
-    "attribs": Object {},
+    "attribs": Object {
+      "class": "container-fluid",
+    },
     "children": Array [
       Object {
         "attribs": Object {
-          "class": "container-fluid",
+          "class": "",
         },
         "children": Array [
           Object {
             "attribs": Object {
-              "class": "",
+              "class": "form-group",
             },
             "children": Array [
               Object {
+                "attribs": Object {
+                  "class": "control-label",
+                  "for": "login-field-email",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Email",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "label",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "form-control",
+                    "id": "login-field-email",
+                    "name": "email",
+                    "type": "email",
+                  },
+                  "children": Array [],
+                  "name": "input",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                    "type": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                    "type": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "for": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "for": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "class": "form-control",
+                  "id": "login-field-email",
+                  "name": "email",
+                  "type": "email",
+                },
+                "children": Array [],
+                "name": "input",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "control-label",
+                    "for": "login-field-email",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Email",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "label",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "id": undefined,
+                  "name": undefined,
+                  "type": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "id": undefined,
+                  "name": undefined,
+                  "type": undefined,
+                },
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "form-group",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "class": "control-label",
+                    "for": "login-field-password",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Password",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "label",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "form-control",
+                      "id": "login-field-password",
+                      "name": "password",
+                    },
+                    "children": Array [],
+                    "name": "input",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "id": undefined,
+                      "name": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "id": undefined,
+                      "name": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "form-control",
+                    "id": "login-field-password",
+                    "name": "password",
+                  },
+                  "children": Array [],
+                  "name": "input",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "control-label",
+                      "for": "login-field-password",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Password",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "label",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "for": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "for": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                  },
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "class": "btn btn-default",
+                  "type": "submit",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Log In",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "button",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "type": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "type": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "form-group",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "control-label",
+                  "for": "login-field-password",
+                },
+                "children": Array [
+                  Object {
+                    "data": "Password",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "label",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "form-control",
+                    "id": "login-field-password",
+                    "name": "password",
+                  },
+                  "children": Array [],
+                  "name": "input",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "for": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "for": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "class": "form-control",
+                  "id": "login-field-password",
+                  "name": "password",
+                },
+                "children": Array [],
+                "name": "input",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "control-label",
+                    "for": "login-field-password",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Password",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "label",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "id": undefined,
+                  "name": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "id": undefined,
+                  "name": undefined,
+                },
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "class": "btn btn-default",
+                "type": "submit",
+              },
+              "children": Array [
+                Object {
+                  "data": "Log In",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "type": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "type": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "form-group",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "class": "control-label",
+                    "for": "login-field-email",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Email",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "label",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "form-control",
+                      "id": "login-field-email",
+                      "name": "email",
+                      "type": "email",
+                    },
+                    "children": Array [],
+                    "name": "input",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "id": undefined,
+                      "name": undefined,
+                      "type": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "id": undefined,
+                      "name": undefined,
+                      "type": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "form-control",
+                    "id": "login-field-email",
+                    "name": "email",
+                    "type": "email",
+                  },
+                  "children": Array [],
+                  "name": "input",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "control-label",
+                      "for": "login-field-email",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Email",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "label",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "for": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "for": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                    "type": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                    "type": undefined,
+                  },
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "class": "btn btn-default",
+              "type": "submit",
+            },
+            "children": Array [
+              Object {
+                "data": "Log In",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "button",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "form-group",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "class": "control-label",
+                    "for": "login-field-password",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": "Password",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "label",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "form-control",
+                      "id": "login-field-password",
+                      "name": "password",
+                    },
+                    "children": Array [],
+                    "name": "input",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "id": undefined,
+                      "name": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "id": undefined,
+                      "name": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "for": undefined,
+                  },
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "form-control",
+                    "id": "login-field-password",
+                    "name": "password",
+                  },
+                  "children": Array [],
+                  "name": "input",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "attribs": Object {
+                      "class": "control-label",
+                      "for": "login-field-password",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": "Password",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "label",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "for": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "for": undefined,
+                    },
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "id": undefined,
+                    "name": undefined,
+                  },
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": Object {
                 "attribs": Object {
                   "class": "form-group",
                 },
@@ -35,6 +722,7 @@ initialize {
                       },
                     ],
                     "name": "label",
+                    "namespace": "http://www.w3.org/1999/xhtml",
                     "next": Object {
                       "attribs": Object {
                         "class": "form-control",
@@ -44,14 +732,35 @@ initialize {
                       },
                       "children": Array [],
                       "name": "input",
+                      "namespace": "http://www.w3.org/1999/xhtml",
                       "next": null,
                       "parent": [Circular],
                       "prev": [Circular],
                       "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "id": undefined,
+                        "name": undefined,
+                        "type": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "id": undefined,
+                        "name": undefined,
+                        "type": undefined,
+                      },
                     },
                     "parent": [Circular],
                     "prev": null,
                     "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "for": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "for": undefined,
+                    },
                   },
                   Object {
                     "attribs": Object {
@@ -62,6 +771,7 @@ initialize {
                     },
                     "children": Array [],
                     "name": "input",
+                    "namespace": "http://www.w3.org/1999/xhtml",
                     "next": null,
                     "parent": [Circular],
                     "prev": Object {
@@ -79,479 +789,107 @@ initialize {
                         },
                       ],
                       "name": "label",
+                      "namespace": "http://www.w3.org/1999/xhtml",
                       "next": [Circular],
                       "parent": [Circular],
                       "prev": null,
                       "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                        "for": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                        "for": undefined,
+                      },
                     },
                     "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                      "id": undefined,
+                      "name": undefined,
+                      "type": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                      "id": undefined,
+                      "name": undefined,
+                      "type": undefined,
+                    },
                   },
                 ],
                 "name": "div",
-                "next": Object {
-                  "attribs": Object {
-                    "class": "form-group",
-                  },
-                  "children": Array [
-                    Object {
-                      "attribs": Object {
-                        "class": "control-label",
-                        "for": "login-field-password",
-                      },
-                      "children": Array [
-                        Object {
-                          "data": "Password",
-                          "next": null,
-                          "parent": [Circular],
-                          "prev": null,
-                          "type": "text",
-                        },
-                      ],
-                      "name": "label",
-                      "next": Object {
-                        "attribs": Object {
-                          "class": "form-control",
-                          "id": "login-field-password",
-                          "name": "password",
-                        },
-                        "children": Array [],
-                        "name": "input",
-                        "next": null,
-                        "parent": [Circular],
-                        "prev": [Circular],
-                        "type": "tag",
-                      },
-                      "parent": [Circular],
-                      "prev": null,
-                      "type": "tag",
-                    },
-                    Object {
-                      "attribs": Object {
-                        "class": "form-control",
-                        "id": "login-field-password",
-                        "name": "password",
-                      },
-                      "children": Array [],
-                      "name": "input",
-                      "next": null,
-                      "parent": [Circular],
-                      "prev": Object {
-                        "attribs": Object {
-                          "class": "control-label",
-                          "for": "login-field-password",
-                        },
-                        "children": Array [
-                          Object {
-                            "data": "Password",
-                            "next": null,
-                            "parent": [Circular],
-                            "prev": null,
-                            "type": "text",
-                          },
-                        ],
-                        "name": "label",
-                        "next": [Circular],
-                        "parent": [Circular],
-                        "prev": null,
-                        "type": "tag",
-                      },
-                      "type": "tag",
-                    },
-                  ],
-                  "name": "div",
-                  "next": Object {
-                    "attribs": Object {
-                      "class": "btn btn-default",
-                      "type": "submit",
-                    },
-                    "children": Array [
-                      Object {
-                        "data": "Log In",
-                        "next": null,
-                        "parent": [Circular],
-                        "prev": null,
-                        "type": "text",
-                      },
-                    ],
-                    "name": "button",
-                    "next": null,
-                    "parent": [Circular],
-                    "prev": [Circular],
-                    "type": "tag",
-                  },
-                  "parent": [Circular],
-                  "prev": [Circular],
-                  "type": "tag",
-                },
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
                 "parent": [Circular],
                 "prev": null,
                 "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
               },
-              Object {
-                "attribs": Object {
-                  "class": "form-group",
-                },
-                "children": Array [
-                  Object {
-                    "attribs": Object {
-                      "class": "control-label",
-                      "for": "login-field-password",
-                    },
-                    "children": Array [
-                      Object {
-                        "data": "Password",
-                        "next": null,
-                        "parent": [Circular],
-                        "prev": null,
-                        "type": "text",
-                      },
-                    ],
-                    "name": "label",
-                    "next": Object {
-                      "attribs": Object {
-                        "class": "form-control",
-                        "id": "login-field-password",
-                        "name": "password",
-                      },
-                      "children": Array [],
-                      "name": "input",
-                      "next": null,
-                      "parent": [Circular],
-                      "prev": [Circular],
-                      "type": "tag",
-                    },
-                    "parent": [Circular],
-                    "prev": null,
-                    "type": "tag",
-                  },
-                  Object {
-                    "attribs": Object {
-                      "class": "form-control",
-                      "id": "login-field-password",
-                      "name": "password",
-                    },
-                    "children": Array [],
-                    "name": "input",
-                    "next": null,
-                    "parent": [Circular],
-                    "prev": Object {
-                      "attribs": Object {
-                        "class": "control-label",
-                        "for": "login-field-password",
-                      },
-                      "children": Array [
-                        Object {
-                          "data": "Password",
-                          "next": null,
-                          "parent": [Circular],
-                          "prev": null,
-                          "type": "text",
-                        },
-                      ],
-                      "name": "label",
-                      "next": [Circular],
-                      "parent": [Circular],
-                      "prev": null,
-                      "type": "tag",
-                    },
-                    "type": "tag",
-                  },
-                ],
-                "name": "div",
-                "next": Object {
-                  "attribs": Object {
-                    "class": "btn btn-default",
-                    "type": "submit",
-                  },
-                  "children": Array [
-                    Object {
-                      "data": "Log In",
-                      "next": null,
-                      "parent": [Circular],
-                      "prev": null,
-                      "type": "text",
-                    },
-                  ],
-                  "name": "button",
-                  "next": null,
-                  "parent": [Circular],
-                  "prev": [Circular],
-                  "type": "tag",
-                },
-                "parent": [Circular],
-                "prev": Object {
-                  "attribs": Object {
-                    "class": "form-group",
-                  },
-                  "children": Array [
-                    Object {
-                      "attribs": Object {
-                        "class": "control-label",
-                        "for": "login-field-email",
-                      },
-                      "children": Array [
-                        Object {
-                          "data": "Email",
-                          "next": null,
-                          "parent": [Circular],
-                          "prev": null,
-                          "type": "text",
-                        },
-                      ],
-                      "name": "label",
-                      "next": Object {
-                        "attribs": Object {
-                          "class": "form-control",
-                          "id": "login-field-email",
-                          "name": "email",
-                          "type": "email",
-                        },
-                        "children": Array [],
-                        "name": "input",
-                        "next": null,
-                        "parent": [Circular],
-                        "prev": [Circular],
-                        "type": "tag",
-                      },
-                      "parent": [Circular],
-                      "prev": null,
-                      "type": "tag",
-                    },
-                    Object {
-                      "attribs": Object {
-                        "class": "form-control",
-                        "id": "login-field-email",
-                        "name": "email",
-                        "type": "email",
-                      },
-                      "children": Array [],
-                      "name": "input",
-                      "next": null,
-                      "parent": [Circular],
-                      "prev": Object {
-                        "attribs": Object {
-                          "class": "control-label",
-                          "for": "login-field-email",
-                        },
-                        "children": Array [
-                          Object {
-                            "data": "Email",
-                            "next": null,
-                            "parent": [Circular],
-                            "prev": null,
-                            "type": "text",
-                          },
-                        ],
-                        "name": "label",
-                        "next": [Circular],
-                        "parent": [Circular],
-                        "prev": null,
-                        "type": "tag",
-                      },
-                      "type": "tag",
-                    },
-                  ],
-                  "name": "div",
-                  "next": [Circular],
-                  "parent": [Circular],
-                  "prev": null,
-                  "type": "tag",
-                },
-                "type": "tag",
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
               },
-              Object {
-                "attribs": Object {
-                  "class": "btn btn-default",
-                  "type": "submit",
-                },
-                "children": Array [
-                  Object {
-                    "data": "Log In",
-                    "next": null,
-                    "parent": [Circular],
-                    "prev": null,
-                    "type": "text",
-                  },
-                ],
-                "name": "button",
-                "next": null,
-                "parent": [Circular],
-                "prev": Object {
-                  "attribs": Object {
-                    "class": "form-group",
-                  },
-                  "children": Array [
-                    Object {
-                      "attribs": Object {
-                        "class": "control-label",
-                        "for": "login-field-password",
-                      },
-                      "children": Array [
-                        Object {
-                          "data": "Password",
-                          "next": null,
-                          "parent": [Circular],
-                          "prev": null,
-                          "type": "text",
-                        },
-                      ],
-                      "name": "label",
-                      "next": Object {
-                        "attribs": Object {
-                          "class": "form-control",
-                          "id": "login-field-password",
-                          "name": "password",
-                        },
-                        "children": Array [],
-                        "name": "input",
-                        "next": null,
-                        "parent": [Circular],
-                        "prev": [Circular],
-                        "type": "tag",
-                      },
-                      "parent": [Circular],
-                      "prev": null,
-                      "type": "tag",
-                    },
-                    Object {
-                      "attribs": Object {
-                        "class": "form-control",
-                        "id": "login-field-password",
-                        "name": "password",
-                      },
-                      "children": Array [],
-                      "name": "input",
-                      "next": null,
-                      "parent": [Circular],
-                      "prev": Object {
-                        "attribs": Object {
-                          "class": "control-label",
-                          "for": "login-field-password",
-                        },
-                        "children": Array [
-                          Object {
-                            "data": "Password",
-                            "next": null,
-                            "parent": [Circular],
-                            "prev": null,
-                            "type": "text",
-                          },
-                        ],
-                        "name": "label",
-                        "next": [Circular],
-                        "parent": [Circular],
-                        "prev": null,
-                        "type": "tag",
-                      },
-                      "type": "tag",
-                    },
-                  ],
-                  "name": "div",
-                  "next": [Circular],
-                  "parent": [Circular],
-                  "prev": Object {
-                    "attribs": Object {
-                      "class": "form-group",
-                    },
-                    "children": Array [
-                      Object {
-                        "attribs": Object {
-                          "class": "control-label",
-                          "for": "login-field-email",
-                        },
-                        "children": Array [
-                          Object {
-                            "data": "Email",
-                            "next": null,
-                            "parent": [Circular],
-                            "prev": null,
-                            "type": "text",
-                          },
-                        ],
-                        "name": "label",
-                        "next": Object {
-                          "attribs": Object {
-                            "class": "form-control",
-                            "id": "login-field-email",
-                            "name": "email",
-                            "type": "email",
-                          },
-                          "children": Array [],
-                          "name": "input",
-                          "next": null,
-                          "parent": [Circular],
-                          "prev": [Circular],
-                          "type": "tag",
-                        },
-                        "parent": [Circular],
-                        "prev": null,
-                        "type": "tag",
-                      },
-                      Object {
-                        "attribs": Object {
-                          "class": "form-control",
-                          "id": "login-field-email",
-                          "name": "email",
-                          "type": "email",
-                        },
-                        "children": Array [],
-                        "name": "input",
-                        "next": null,
-                        "parent": [Circular],
-                        "prev": Object {
-                          "attribs": Object {
-                            "class": "control-label",
-                            "for": "login-field-email",
-                          },
-                          "children": Array [
-                            Object {
-                              "data": "Email",
-                              "next": null,
-                              "parent": [Circular],
-                              "prev": null,
-                              "type": "text",
-                            },
-                          ],
-                          "name": "label",
-                          "next": [Circular],
-                          "parent": [Circular],
-                          "prev": null,
-                          "type": "tag",
-                        },
-                        "type": "tag",
-                      },
-                    ],
-                    "name": "div",
-                    "next": [Circular],
-                    "parent": [Circular],
-                    "prev": null,
-                    "type": "tag",
-                  },
-                  "type": "tag",
-                },
-                "type": "tag",
+              "x-attribsPrefix": Object {
+                "class": undefined,
               },
-            ],
-            "name": "form",
-            "next": null,
-            "parent": [Circular],
-            "prev": null,
+            },
             "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "type": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "type": undefined,
+            },
           },
         ],
-        "name": "div",
+        "name": "form",
+        "namespace": "http://www.w3.org/1999/xhtml",
         "next": null,
-        "parent": null,
+        "parent": [Circular],
         "prev": null,
-        "root": [Circular],
         "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
       },
     ],
-    "name": "root",
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
     "next": null,
     "parent": null,
     "prev": null,
-    "type": "root",
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {
+      "class": undefined,
+    },
+    "x-attribsPrefix": Object {
+      "class": undefined,
+    },
   },
   "_root": [Circular],
   "length": 1,
@@ -559,7 +897,7 @@ initialize {
     "decodeEntities": true,
     "normalizeWhitespace": false,
     "withDomLvl1": true,
-    "xmlMode": false,
+    "xml": false,
   },
 }
 `;
