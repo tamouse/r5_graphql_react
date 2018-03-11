@@ -1,9 +1,8 @@
 Types::ViewerType = GraphQL::ObjectType.define do
   name "Viewer"
-  field :id, !types.ID, hash_key: :uuid
-  field :db_row_id, types.Int, hash_key: :id
-  field :name, !types.String
-  field :email, !types.String
+  field :self, Types::UserType, "My User Record" do
+    resolve ->(object, _a, _c) { object }
+  end
 
   connection :my_posts, Edges::PostsWithPagination do
     argument :ids, types.String
@@ -34,6 +33,4 @@ Types::ViewerType = GraphQL::ObjectType.define do
   connection :all_authors, Edges::UsersWithPagination do
     resolve ->(_object, _a, _c) { User.all }
   end
-
-
 end
