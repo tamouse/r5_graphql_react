@@ -5,7 +5,7 @@ import {graphql} from 'react-apollo'
 import gql from 'graphql-tag'
 import PostsListing from './PostListing'
 
-const listPosts = gql`query Posts{viewer {public_posts {id title excerpt body published_at_ms}}}`
+const listPosts = gql`query Posts{viewer {public_posts { totalCount edges { node {id title excerpt body published_at_ms}}}}}`
 
 const PostsContainer = props => {
   const { data: { loading, error, viewer}, ...rest } = props
@@ -20,12 +20,12 @@ const PostsContainer = props => {
 
   const {public_posts} = viewer
 
-  if (!public_posts) return (
+  if (public_posts.totalCount < 1) return (
     <EmptyPosts {...rest}>No posts</EmptyPosts>
   )
 
   return (
-    <PostsListing {...rest} viewer={viewer} posts={public_posts}/>
+    <PostsListing {...rest} viewer={viewer} posts={public_posts.edges.map(n => n.node)}/>
   )
 }
 
