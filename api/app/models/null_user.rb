@@ -1,41 +1,23 @@
 class NullUser
+
   include ActiveModel::Model
-  attr_accessor :id, :uuid, :name, :email, :admin
+  attr_accessor :null_user
+
+  delegate_missing_to :null_user
+
   def initialize(attributes={})
-    self.id = 0
-    self.uuid = ''
-    self.name = 'Null User'
-    self.email = 'null'
-    self.admin = false
-  end
-
-  def persisted?
-    true
-  end
-
-  def validated
-    true
-  end
-  alias :valid? :validated
-
-  def posts
-    []
-  end
-
-  def comments
-    []
+    self.null_user = User.new(
+      id: -1,
+      uuid: '',
+      name: '',
+      email: '',
+      admin: false,
+    )
+    self.null_user.id = -1
   end
 
   def can_post?
     false
-  end
-
-  def method_missing(method_id)
-    null
-  end
-
-  def respond_to?(method_id)
-    User.new.respond_to? method_id
   end
 
 end

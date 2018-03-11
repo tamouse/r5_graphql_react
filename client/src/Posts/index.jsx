@@ -5,7 +5,7 @@ import {graphql} from 'react-apollo'
 import gql from 'graphql-tag'
 import PostsListing from './PostListing'
 
-const listPosts = gql`query Posts{viewer {public_posts {id title excerpt body publishedAt}}}`
+const listPosts = gql`query Posts{viewer {public_posts {id title excerpt body published_at_ms}}}`
 
 const PostsContainer = props => {
   const { data: { loading, error, viewer}, ...rest } = props
