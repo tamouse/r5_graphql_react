@@ -58,34 +58,36 @@ ShallowWrapper {
           pullRight={true}
           stacked={false}
 >
-          <LinkContainer
-                    activeClassName="active"
-                    exact={false}
-                    replace={false}
-                    strict={false}
-                    to="/login"
-          >
-                    <NavItem
-                              active={false}
-                              disabled={false}
+          <Unknown>
+                    <LinkContainer
+                              activeClassName="active"
+                              exact={false}
+                              replace={false}
+                              strict={false}
+                              to="/login"
                     >
-                              Log In
-                    </NavItem>
-          </LinkContainer>
-          <LinkContainer
-                    activeClassName="active"
-                    exact={false}
-                    replace={false}
-                    strict={false}
-                    to="/signup"
-          >
-                    <NavItem
-                              active={false}
-                              disabled={false}
+                              <NavItem
+                                        active={false}
+                                        disabled={false}
+                              >
+                                        Log In
+                              </NavItem>
+                    </LinkContainer>
+                    <LinkContainer
+                              activeClassName="active"
+                              exact={false}
+                              replace={false}
+                              strict={false}
+                              to="/signup"
                     >
-                              Sign Up
-                    </NavItem>
-          </LinkContainer>
+                              <NavItem
+                                        active={false}
+                                        disabled={false}
+                              >
+                                        Sign Up
+                              </NavItem>
+                    </LinkContainer>
+          </Unknown>
 </Nav>,
       ],
       "collapseOnSelect": true,
@@ -204,110 +206,149 @@ ShallowWrapper {
         "nodeType": "class",
         "props": Object {
           "bsClass": "nav",
-          "children": Array [
+          "children": <Unknown>
             <LinkContainer
-              activeClassName="active"
-              exact={false}
-              replace={false}
-              strict={false}
-              to="/login"
->
-              <NavItem
-                            active={false}
-                            disabled={false}
-              >
-                            Log In
-              </NavItem>
-</LinkContainer>,
+                        activeClassName="active"
+                        exact={false}
+                        replace={false}
+                        strict={false}
+                        to="/login"
+            >
+                        <NavItem
+                                    active={false}
+                                    disabled={false}
+                        >
+                                    Log In
+                        </NavItem>
+            </LinkContainer>
             <LinkContainer
-              activeClassName="active"
-              exact={false}
-              replace={false}
-              strict={false}
-              to="/signup"
->
-              <NavItem
-                            active={false}
-                            disabled={false}
-              >
-                            Sign Up
-              </NavItem>
-</LinkContainer>,
-          ],
+                        activeClassName="active"
+                        exact={false}
+                        replace={false}
+                        strict={false}
+                        to="/signup"
+            >
+                        <NavItem
+                                    active={false}
+                                    disabled={false}
+                        >
+                                    Sign Up
+                        </NavItem>
+            </LinkContainer>
+</Unknown>,
           "justified": false,
           "pullLeft": false,
           "pullRight": true,
           "stacked": false,
         },
         "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": "1",
-            "nodeType": "class",
-            "props": Object {
-              "activeClassName": "active",
-              "children": <NavItem
-                active={false}
-                disabled={false}
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <LinkContainer
+                activeClassName="active"
+                exact={false}
+                replace={false}
+                strict={false}
+                to="/login"
 >
-                Log In
-</NavItem>,
-              "exact": false,
-              "replace": false,
-              "strict": false,
-              "to": "/login",
-            },
-            "ref": null,
-            "rendered": Object {
+                <NavItem
+                                active={false}
+                                disabled={false}
+                >
+                                Log In
+                </NavItem>
+</LinkContainer>,
+              <LinkContainer
+                activeClassName="active"
+                exact={false}
+                replace={false}
+                strict={false}
+                to="/signup"
+>
+                <NavItem
+                                active={false}
+                                disabled={false}
+                >
+                                Sign Up
+                </NavItem>
+</LinkContainer>,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
               "instance": null,
-              "key": undefined,
+              "key": "1",
               "nodeType": "class",
               "props": Object {
-                "active": false,
-                "children": "Log In",
-                "disabled": false,
+                "activeClassName": "active",
+                "children": <NavItem
+                  active={false}
+                  disabled={false}
+>
+                  Log In
+</NavItem>,
+                "exact": false,
+                "replace": false,
+                "strict": false,
+                "to": "/login",
               },
               "ref": null,
-              "rendered": "Log In",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "children": "Log In",
+                  "disabled": false,
+                },
+                "ref": null,
+                "rendered": "Log In",
+                "type": [Function],
+              },
               "type": [Function],
             },
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": "2",
-            "nodeType": "class",
-            "props": Object {
-              "activeClassName": "active",
-              "children": <NavItem
-                active={false}
-                disabled={false}
->
-                Sign Up
-</NavItem>,
-              "exact": false,
-              "replace": false,
-              "strict": false,
-              "to": "/signup",
-            },
-            "ref": null,
-            "rendered": Object {
+            Object {
               "instance": null,
-              "key": undefined,
+              "key": "2",
               "nodeType": "class",
               "props": Object {
-                "active": false,
-                "children": "Sign Up",
-                "disabled": false,
+                "activeClassName": "active",
+                "children": <NavItem
+                  active={false}
+                  disabled={false}
+>
+                  Sign Up
+</NavItem>,
+                "exact": false,
+                "replace": false,
+                "strict": false,
+                "to": "/signup",
               },
               "ref": null,
-              "rendered": "Sign Up",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "active": false,
+                  "children": "Sign Up",
+                  "disabled": false,
+                },
+                "ref": null,
+                "rendered": "Sign Up",
+                "type": [Function],
+              },
               "type": [Function],
             },
-            "type": [Function],
-          },
-        ],
+          ],
+          "type": Symbol(react.fragment),
+        },
         "type": [Function],
       },
     ],
@@ -360,34 +401,36 @@ ShallowWrapper {
             pullRight={true}
             stacked={false}
 >
-            <LinkContainer
-                        activeClassName="active"
-                        exact={false}
-                        replace={false}
-                        strict={false}
-                        to="/login"
-            >
-                        <NavItem
-                                    active={false}
-                                    disabled={false}
+            <Unknown>
+                        <LinkContainer
+                                    activeClassName="active"
+                                    exact={false}
+                                    replace={false}
+                                    strict={false}
+                                    to="/login"
                         >
-                                    Log In
-                        </NavItem>
-            </LinkContainer>
-            <LinkContainer
-                        activeClassName="active"
-                        exact={false}
-                        replace={false}
-                        strict={false}
-                        to="/signup"
-            >
-                        <NavItem
-                                    active={false}
-                                    disabled={false}
+                                    <NavItem
+                                                active={false}
+                                                disabled={false}
+                                    >
+                                                Log In
+                                    </NavItem>
+                        </LinkContainer>
+                        <LinkContainer
+                                    activeClassName="active"
+                                    exact={false}
+                                    replace={false}
+                                    strict={false}
+                                    to="/signup"
                         >
-                                    Sign Up
-                        </NavItem>
-            </LinkContainer>
+                                    <NavItem
+                                                active={false}
+                                                disabled={false}
+                                    >
+                                                Sign Up
+                                    </NavItem>
+                        </LinkContainer>
+            </Unknown>
 </Nav>,
         ],
         "collapseOnSelect": true,
@@ -506,110 +549,149 @@ ShallowWrapper {
           "nodeType": "class",
           "props": Object {
             "bsClass": "nav",
-            "children": Array [
+            "children": <Unknown>
               <LinkContainer
-                activeClassName="active"
-                exact={false}
-                replace={false}
-                strict={false}
-                to="/login"
->
-                <NavItem
-                                active={false}
-                                disabled={false}
-                >
-                                Log In
-                </NavItem>
-</LinkContainer>,
+                            activeClassName="active"
+                            exact={false}
+                            replace={false}
+                            strict={false}
+                            to="/login"
+              >
+                            <NavItem
+                                          active={false}
+                                          disabled={false}
+                            >
+                                          Log In
+                            </NavItem>
+              </LinkContainer>
               <LinkContainer
-                activeClassName="active"
-                exact={false}
-                replace={false}
-                strict={false}
-                to="/signup"
->
-                <NavItem
-                                active={false}
-                                disabled={false}
-                >
-                                Sign Up
-                </NavItem>
-</LinkContainer>,
-            ],
+                            activeClassName="active"
+                            exact={false}
+                            replace={false}
+                            strict={false}
+                            to="/signup"
+              >
+                            <NavItem
+                                          active={false}
+                                          disabled={false}
+                            >
+                                          Sign Up
+                            </NavItem>
+              </LinkContainer>
+</Unknown>,
             "justified": false,
             "pullLeft": false,
             "pullRight": true,
             "stacked": false,
           },
           "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": "1",
-              "nodeType": "class",
-              "props": Object {
-                "activeClassName": "active",
-                "children": <NavItem
-                  active={false}
-                  disabled={false}
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": Array [
+                <LinkContainer
+                  activeClassName="active"
+                  exact={false}
+                  replace={false}
+                  strict={false}
+                  to="/login"
 >
-                  Log In
-</NavItem>,
-                "exact": false,
-                "replace": false,
-                "strict": false,
-                "to": "/login",
-              },
-              "ref": null,
-              "rendered": Object {
+                  <NavItem
+                                    active={false}
+                                    disabled={false}
+                  >
+                                    Log In
+                  </NavItem>
+</LinkContainer>,
+                <LinkContainer
+                  activeClassName="active"
+                  exact={false}
+                  replace={false}
+                  strict={false}
+                  to="/signup"
+>
+                  <NavItem
+                                    active={false}
+                                    disabled={false}
+                  >
+                                    Sign Up
+                  </NavItem>
+</LinkContainer>,
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
                 "instance": null,
-                "key": undefined,
+                "key": "1",
                 "nodeType": "class",
                 "props": Object {
-                  "active": false,
-                  "children": "Log In",
-                  "disabled": false,
+                  "activeClassName": "active",
+                  "children": <NavItem
+                    active={false}
+                    disabled={false}
+>
+                    Log In
+</NavItem>,
+                  "exact": false,
+                  "replace": false,
+                  "strict": false,
+                  "to": "/login",
                 },
                 "ref": null,
-                "rendered": "Log In",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": false,
+                    "children": "Log In",
+                    "disabled": false,
+                  },
+                  "ref": null,
+                  "rendered": "Log In",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": "2",
-              "nodeType": "class",
-              "props": Object {
-                "activeClassName": "active",
-                "children": <NavItem
-                  active={false}
-                  disabled={false}
->
-                  Sign Up
-</NavItem>,
-                "exact": false,
-                "replace": false,
-                "strict": false,
-                "to": "/signup",
-              },
-              "ref": null,
-              "rendered": Object {
+              Object {
                 "instance": null,
-                "key": undefined,
+                "key": "2",
                 "nodeType": "class",
                 "props": Object {
-                  "active": false,
-                  "children": "Sign Up",
-                  "disabled": false,
+                  "activeClassName": "active",
+                  "children": <NavItem
+                    active={false}
+                    disabled={false}
+>
+                    Sign Up
+</NavItem>,
+                  "exact": false,
+                  "replace": false,
+                  "strict": false,
+                  "to": "/signup",
                 },
                 "ref": null,
-                "rendered": "Sign Up",
+                "rendered": Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "active": false,
+                    "children": "Sign Up",
+                    "disabled": false,
+                  },
+                  "ref": null,
+                  "rendered": "Sign Up",
+                  "type": [Function],
+                },
                 "type": [Function],
               },
-              "type": [Function],
-            },
-          ],
+            ],
+            "type": Symbol(react.fragment),
+          },
           "type": [Function],
         },
       ],
