@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: "Upgrade to Apollo Client v2"
 date: 2018-03-11T00:24
 ---
