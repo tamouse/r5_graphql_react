@@ -1,17 +1,17 @@
 import {
-  userLoggedIn
+  isUserLoggedIn
 } from "./index";
 
-describe("userLoggedIn tests", ()=>{
+describe("isUserLoggedIn tests", ()=>{
 
   test("returns false when no token in sessionStorage",()=>{
     global.sessionStorage.clear()
-    expect(userLoggedIn()).toBeFalsy()
+    expect(isUserLoggedIn()).toBeFalsy()
   })
 
   test("returns true when a token in sessionStorage", ()=>{
     global.sessionStorage.getItem = key => key
-    expect(userLoggedIn()).toBeTruthy()
+    expect(isUserLoggedIn()).toBeTruthy()
     global.sessionStorage.getItem = jest.fn()
   })
 

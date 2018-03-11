@@ -1,6 +1,6 @@
 
 
-export const userLoggedIn = () => {
+export const isUserLoggedIn = () => {
   if (global.sessionStorage.getItem('token')) {
     return true
   } else {

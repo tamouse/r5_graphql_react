@@ -7,8 +7,10 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <WhoAmi
     viewer={
         Object {
-            "email": "fred_murtz@lucy.com",
-            "name": "Fred",
+            "self": Object {
+              "email": "fred_murtz@lucy.com",
+              "name": "Fred",
+            },
           }
     }
 />,

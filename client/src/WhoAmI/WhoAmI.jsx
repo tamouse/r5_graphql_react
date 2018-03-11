@@ -10,7 +10,7 @@ import {
 } from 'react-bootstrap'
 
 const WhoAmi = props => {
-  const {viewer} = props
+  const {viewer: {self: viewer}} = props
   return(
     <Grid fluid={true}>
       <Row>

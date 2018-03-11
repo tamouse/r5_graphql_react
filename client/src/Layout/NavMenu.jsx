@@ -7,18 +7,18 @@ import {
 } from 'react-bootstrap'
 import {LinkContainer} from 'react-router-bootstrap'
 import {Link} from 'react-router-dom'
-import {userLoggedIn} from '../Utils';
+import {isUserLoggedIn} from '../Utils';
 
 const NavMenu = props => {
   const userMenu = () => {
-    if (userLoggedIn()) {
+    if (isUserLoggedIn()) {
       return (<LinkContainer to={'/logout'}><NavItem>Log Out</NavItem></LinkContainer>)
     } else {
       return (
-        [
-          <LinkContainer key={1} to={'/login'}><NavItem>Log In</NavItem></LinkContainer>,
+        <React.Fragment>
+          <LinkContainer key={1} to={'/login'}><NavItem>Log In</NavItem></LinkContainer>
           <LinkContainer key={2} to={'/signup'}><NavItem>Sign Up</NavItem></LinkContainer>
-        ]
+        </React.Fragment>
       )
     }
   }

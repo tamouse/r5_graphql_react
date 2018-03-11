@@ -11,20 +11,13 @@ mutation LogInUser($credentials: AuthProviderCredentials) {
 }`
 
 class LogIn extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
+  state = {
       email: '',
       password: '',
-      mutate: props.mutate,
       loggedIn: false,
-    }
-
-    this.handleChange = this.handleChange.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  handleChange(e) {
+  handleChange = e => {
     const target = e.target
     const value = target.type === 'checkbox' ? target.checked : target.value
     const name = target.name
@@ -35,7 +28,7 @@ class LogIn extends React.Component {
   }
 
 
-  handleSubmit(e) {
+  handleSubmit = e => {
     e.preventDefault()
 
     const credentials = {
@@ -43,7 +36,7 @@ class LogIn extends React.Component {
       password: this.state.password,
     }
 
-    this.state.mutate({
+    this.props.mutate({
       variables: {
         credentials,
       },
