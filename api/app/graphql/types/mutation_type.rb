@@ -12,7 +12,7 @@ GRAPHQL_CANONICAL_MUTATIONS = {
 
   createPost: 'mutation CreatePost($post_parameters: PostInput!)
   { createPost(post_parameters: $post_parameters)
-    { id title excerpt body publishedAt author { name } comment_count }
+    { id title excerpt body published_at author { name } comment_count }
   }',
 }
 

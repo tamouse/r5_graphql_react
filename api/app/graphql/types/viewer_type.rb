@@ -1,16 +1,39 @@
 Types::ViewerType = GraphQL::ObjectType.define do
   name "Viewer"
   field :id, !types.ID, hash_key: :uuid
+  field :db_row_id, types.Int, hash_key: :id
   field :name, !types.String
   field :email, !types.String
-  field :my_posts, types[Types::PostType] do
-    resolve ->(obj, _, _) { obj.posts }
+
+  connection :my_posts, Edges::PostsWithPagination do
+    argument :ids, types.String
+    argument :title_contains, types.String
+    argument :since, types.String
+    argument :published_only, types.Boolean
+    argument :drafs_only, types.Boolean
+    argument :sort_by, types.String
+    argument :direction, types.String
+    argument :page, types.Int
+    argument :per_page, types.Int
+    resolve Resolvers::PostsResolver.new( ->(o,a,c) {o.posts} )
   end
 
-  field :public_posts, types[Types::PostType] do
-    resolve ->(_,_,_){ Post.all }
+  connection :public_posts, Edges::PostsWithPagination do
+    argument :ids, types.String
+    argument :title_contains, types.String
+    argument :since, types.String
+    argument :published_only, types.Boolean
+    argument :drafs_only, types.Boolean
+    argument :sort_by, types.String
+    argument :direction, types.String
+    argument :page, types.Int
+    argument :per_page, types.Int
+    resolve Resolvers::PostsResolver.new( ->(o,a,c) { Post.published })
   end
-  field :all_authors, types[Types::UserType] do
-    resolve ->(_,_,_){ User.all }
+
+  connection :all_authors, Edges::UsersWithPagination do
+    resolve ->(_object, _a, _c) { User.all }
   end
+
+
 end
